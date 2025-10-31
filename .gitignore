@@ -140,3 +140,11 @@ secrets/
 keys/
 config_local.*
 local_settings.*
+
+# Optional: ignore native platform folders
+android/
+ios/
+windows/
+macos/
+linux/
+web/
