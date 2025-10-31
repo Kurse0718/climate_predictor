@@ -1,0 +1,9 @@
+{
+  "city": "New York (JFK)",
+  "lat": 40.6413,
+  "lon": -73.7781,
+  "variable": "tmax",
+  "horizon_days": 7,
+  "model": "XGBoost",
+  "generated_on": "2025-10-31"
+}

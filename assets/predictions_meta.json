@@ -1,0 +1,19 @@
+{
+  "city": "New York (JFK)",
+  "lat": 40.6413,
+  "lon": -73.7781,
+  "variable": "tmax",
+  "models": [
+    "Linear",
+    "RandomForest",
+    "XGBoost"
+  ],
+  "training_range": [
+    "2013-01-15",
+    "2022-01-01"
+  ],
+  "test_range": [
+    "2022-01-01",
+    "2025-10-29"
+  ]
+}

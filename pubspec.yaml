@@ -23,3 +23,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/predictions.json
+    - assets/predictions_meta.json
+    - assets/ai_forecast.json
+    - assets/ai_forecast_meta.json
