@@ -1,7 +1,7 @@
 # 🌤️ Flutter Climate App
 
-A modern Flutter app that connects to a FastAPI backend for AI-powered climate pattern predictions.  
-Built with Flutter and integrated with the **climate-ai-backend-new** Python service.
+A modern Flutter app that compares data for a AI-powered climate pattern predictions.  
+Built with Flutter
 
 ---
 
@@ -9,8 +9,7 @@ Built with Flutter and integrated with the **climate-ai-backend-new** Python ser
 - Compare AI predictions vs. live forecast data  
 - Toggle AI visualization (`Show AI` option)  
 - View 7-day prediction data  
-- Built with Flutter + FastAPI + REST API  
-- Works fully online — backend hosted on Render  
+- Built with Flutter
 
 ---
 
@@ -52,27 +51,6 @@ flutter run
 ```
 
 > 💡 If you have multiple devices/emulators, use `flutter devices` to list them.
-
----
-
-## 🔌 Connect to Backend
-
-This app expects a running FastAPI backend.  
-Make sure you have the backend deployed (for example, on Render):
-
-```
-https://climate-ai-backend-new.onrender.com
-```
-
-In your Flutter app, open:
-```
-lib/services/api.dart
-```
-
-and set:
-```dart
-final api = BackendApi(baseUrl: 'https://climate-ai-backend-new.onrender.com');
-```
 
 ---
 
