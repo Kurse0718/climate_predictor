@@ -1,35 +1,142 @@
-# Flutter/Dart
+# ==========================================
+# 🌦️ Climate Predictor Project .gitignore
+# Covers both Flutter app + Python ML scripts
+# ==========================================
+
+# -----------------------
+# 🐍 Python Section
+# -----------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Logs & temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Data / model outputs
+*.csv
+*.json
+*.pkl
+*.h5
+*.joblib
+*.dat
+*.npy
+*.npz
+
+# But keep sample JSONs needed by Flutter assets
+!assets/predictions.json
+!assets/predictions_meta.json
+!assets/ai_forecast.json
+!assets/ai_forecast_meta.json
+
+# Notebooks or local experiments
+notebooks/
+research_notes/
+experiments/
+
+# -----------------------
+# 🦋 Flutter / Dart Section
+# -----------------------
+
+# Dart & Flutter build directories
 .dart_tool/
-.packages
 .flutter-plugins
 .flutter-plugins-dependencies
-.buildlog/
-pubspec.lock
-
-# Build outputs
+.packages
+.pub-cache/
 build/
-android/app/build/
-ios/Pods/
-ios/.symlinks/
+android/.gradle/
+android/.idea/
+android/local.properties
 ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+macos/Pods/
+macos/Runner.xcworkspace/
+windows/flutter/
+linux/flutter/
+web/.dart_tool/
 
-# IDE and OS
-.idea/
+# Generated plugin registrant
+lib/generated_plugin_registrant.dart
+
+# VS Code / IntelliJ / Android Studio
 .vscode/
+.idea/
 *.iml
-.DS_Store
-Thumbs.db
 
-# Firebase / secrets
-android/app/google-services.json
-ios/Runner/GoogleService-Info.plist
-.env
-.env.*
+# Xcode user-specific files
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcuserdata/
+DerivedData/
+
+# Gradle & CocoaPods
+.gradle/
+Podfile.lock
+pubspec.lock
 *.keystore
 *.jks
 
-# Binaries
+# Binary / build outputs
 *.apk
 *.aab
 *.ipa
+*.dSYM
+*.so
+*.exe
+*.dll
+*.bin
+
+# -----------------------
+# ☁️ OS & Misc
+# -----------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -----------------------
+# 🔒 Personal / Local
+# -----------------------
+# Any credentials, environment variables, local notes
+*.env
+.env.*
+secrets/
+keys/
+config_local.*
+local_settings.*
