@@ -6,6 +6,7 @@ import '../models/rows.dart';
 import '../services/open_meteo_service.dart';
 import '../widgets/forecast_card.dart';
 import '../widgets/model_performance_card.dart';
+import '../pages/chart_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -235,14 +236,32 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("climate_predictor"),
+        title: const Text("Climate Predictor"),
         actions: [
           IconButton(
+            icon: const Icon(Icons.show_chart_outlined),
+            tooltip: "View Chart (API vs AI)",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => ChartPage(
+                    apiDaily: apiDaily,
+                    aiFutureByDate: aiFutureByDate,
+                    aiRows: aiRows,
+                  ),
+                ),
+              );
+            },
+          ),
+          IconButton(
             icon: const Icon(Icons.menu_book_outlined),
+            tooltip: "Glossary / Info",
             onPressed: () => Navigator.pushNamed(context, '/glossary'),
           ),
         ],
       ),
+
       body: Column(
         children: [
           // search
