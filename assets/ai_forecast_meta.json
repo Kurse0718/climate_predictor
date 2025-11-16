@@ -5,5 +5,5 @@
   "variable": "tmax",
   "horizon_days": 7,
   "model": "XGBoost",
-  "generated_on": "2025-11-12"
+  "generated_on": "2025-11-17"
 }
